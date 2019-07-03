@@ -1,0 +1,116 @@
+
+/* Color Scheme
+Red - #FC4445
+Teal - #3FEEE6
+Dark Teal - #55BCC9
+Light Lavendar - #97CAEF
+White Blue - #CAFAFE
+*/
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;	
+	top: 0;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	height: 100vh;
+	color: #fff;
+}
+
+span.nav-link:hover,
+span.btn:hover {
+	cursor: pointer;
+}
+
+.inner-content {
+	padding: 24px 0;
+}
+
+i {
+	vertical-align: middle;
+}
+
+
+/* Flexbox */
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-center {
+	max-width: 50%;
+}
+
+/* end flexbox */
+
+.shape-spacing {
+	margin: 32px 0;
+}
+
+.hexagon {
+	width: 100px;
+	height: 55px;
+	background: #55BCC9;
+	position: relative;
+	left: 35%;
+	margin-bottom: 28px;
+}
+
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #55BCC9;
+}
+
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #55BCC9;
+}
+
+.hexagon .material-icons {
+	color: #fff;
+	font-size: 48px;
+}
+
+/* Custom button styles */
+
+.btn-primary {
+	color: #fff;
+	background-color: #FC4445;
+	border-color: #FC4445;
+}
+
+/* Media queries */
+
+
+@media screen and (max-width: 992px) {
+	.hex-col {
+		margin-bottom: 20px;
+	}
+
+	/*.hexagon {
+		left: 43%;
+	}*/
+}
