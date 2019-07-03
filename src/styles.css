@@ -24,6 +24,22 @@ White Blue - #CAFAFE
 	color: #fff;
 }
 
+nav {
+	z-index: 9999;
+	border-bottom: 2px solid #FC4445;
+	background-color: #0C0714;
+}
+
+.navbar-light .navbar-nav span.nav-link {
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav span.nav-link:hover {
+	color: #97CAEF;
+}
+
 span.nav-link:hover,
 span.btn:hover {
 	cursor: pointer;
@@ -37,6 +53,26 @@ i {
 	vertical-align: middle;
 }
 
+.personal-space {
+	padding: 36px 0;
+}
+
+.portfolio-col {
+	padding-bottom: 24px;
+}
+
+.portfolio-item {
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	background-color: #55BCC9;
+	color: #fff;
+}
+
+#contact-dest {
+	background-color: #0C0714;
+	color: #fff;
+}
 
 /* Flexbox */
 
@@ -94,12 +130,63 @@ i {
 	font-size: 48px;
 }
 
+.bar-container {
+	width: 100%;
+	background-color: #ddd;
+	border-radius: 5px;
+	margin: 12px 0;
+}
+
+.skill {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+span.skill-desc {
+	float: left;
+	padding: 0 5px;
+}
+
+span.skill-lvl {
+	padding: 0 5px;
+}
+
+.html{width: 90%; background-color: #E34F26;}
+.js{width: 65%; background-color: #ad9d17;}
+.php{width: 80%; background-color: #6C7EB7;}
+.wp{width: 90%; background-color: #21759B;}
+.angular{width: 40%; background-color: #DD0330;}
+.photoshop{width: 50%; background-color: #1c9ebd;}
+.design{width: 70%; background-color: #40a152;}
+.grilling{width: 100%; background-color: #94683d;}
+
 /* Custom button styles */
 
 .btn-primary {
 	color: #fff;
+	background: transparent;
+	border: 4px solid #FC4445;
+	border-color: #FC4445;
+}
+
+.btn-primary:hover {
+	color: #fff;
 	background-color: #FC4445;
 	border-color: #FC4445;
+}
+
+.form-container {
+	width: 50%;
+}
+
+.rounded-image {
+	border-radius: 50%;
+	border: 1px solid #55BCC9;
+	max-width: 320px;
 }
 
 /* Media queries */
@@ -107,10 +194,12 @@ i {
 
 @media screen and (max-width: 992px) {
 	.hex-col {
-		margin-bottom: 20px;
+		margin-bottom: 26px;
 	}
+}
 
-	/*.hexagon {
-		left: 43%;
-	}*/
+@media screen and (max-width: 768px) {
+	.form-container {
+		width: 80%;
+	}
 }

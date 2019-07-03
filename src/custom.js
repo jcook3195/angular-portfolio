@@ -29,6 +29,32 @@ $(document).ready(function() {
 		}, 500);
 	});
 
+	$(".portfolio-scroll").click(function() {
+		var winWidth = getWindowWidth();
+		// Checking if nav toggle is active on mobile
+		if(winWidth <= 992) {
+			var offsetMinus = 210;
+		} else {
+			var offsetMinus = 55;
+		}
+		$('html, body').animate({
+			scrollTop: $("#portfolio-dest").offset().top - offsetMinus
+		}, 500);
+	});
+
+	$(".contact-scroll").click(function() {
+		var winWidth = getWindowWidth();
+		// Checking if nav toggle is active on mobile
+		if(winWidth <= 992) {
+			var offsetMinus = 210;
+		} else {
+			var offsetMinus = 55;
+		}
+		$('html, body').animate({
+			scrollTop: $("#contact-dest").offset().top - offsetMinus
+		}, 500);
+	});
+
 	/* Closing nav on click on mobile */
 	$('.navbar span').on('click', function() {
 		$('.navbar-collapse').collapse('hide');
