@@ -9,7 +9,7 @@ White Blue - #CAFAFE
 
 .sticky {
 	position: -webkit-sticky;
-	position: sticky;	
+	position: sticky;
 	top: 0;
 }
 
@@ -59,18 +59,6 @@ i {
 
 .personal-space {
 	padding: 36px 0;
-}
-
-.portfolio-col {
-	padding-bottom: 24px;
-}
-
-.portfolio-item {
-	text-align: center;
-	width: 100%;
-	height: 300px;
-	background-color: #55BCC9;
-	color: #fff;
 }
 
 #contact-dest {
