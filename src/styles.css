@@ -7,6 +7,26 @@ Light Lavendar - #97CAEF
 White Blue - #CAFAFE
 */
 
+img {
+	max-width: 100%;
+}
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+.portfolio-image-container {
+	overflow: hidden;
+}
+
+.portfolio-image-container img {
+	margin-right: -100px;
+}
+
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
